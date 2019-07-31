@@ -31,3 +31,44 @@
      <input type="text" appNumberOnly (onNumberOnlyCallback)="onNumberOnlyCallback($event)"/>
   ```
   
+
+
+
+
+## Capitalization 
+
+
+
+> Capitalize the first letter and letter after special character.
+
+
+> Input only accept characters, hyphen, single quote and space. 
+
+
+
+
+
+``` abc => Abc ```
+
+
+``` abc-abc => Abc-Abc ```
+
+
+``` abc abc => Abc Abc ```
+
+
+``` abc'abc => Abc'Abc ```
+
+
+
+### How to use
+
+1. Add the appCapitalization attribute to an input element.
+
+```html
+     <input type="text" appCapitalization />
+  ```
+
+
+
+  
