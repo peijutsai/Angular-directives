@@ -3,9 +3,9 @@
 > Several common angular directives.
 
 
-### Number Only directive
+## Number Only directive
 
-#### How to use
+### How to use
 
 1. Add the appNumberOnly attribute to an input element.
 
