@@ -35,7 +35,7 @@
 
 
 
-## Capitalization 
+## Capitalization directive
 
 
 
@@ -45,7 +45,7 @@
 > Input only accept characters, hyphen, single quote and space. 
 
 
-
+### Example
 
 
 ``` abc => Abc ```
@@ -71,4 +71,39 @@
 
 
 
+## SSN validation directive
+
+> Validate SSN format after user entered value (###-##-####).
+
+> SSN/ITIN must be 9 digits in length or 11 digits ssn, with 2 hyphens.
+
+> Only numbers and hyphen are acceptable.
+
+> Recognize input that is entered by the user as ITIN vs SSN.
+
+> If input is empty, then label should read SSN/ITIN
+
+> If input first (left-most) character is NOT EQUAL to 9, then label should read SSN.
+
+> If input first (left-most) character is EQUAL to 9, then label should read ITIN.
+
+> If characters are all masked except for the last 4 digits, i.e., ***-**-3211, so the label should read SSN/ITIN. 
+
+### Example
+
+
+``` 123456789 => 123-45-6789```
+
+
+``` 123-45-6789 => 123-45-6789```
+
+
+
+### How to use
+
+1. Add the appValidationSsn attribute to an input element.
+
+```html
+     <input type="text" appValidationSsn />
+  ```
   
