@@ -71,7 +71,7 @@
 
 
 
-## SSN validation directive
+## SSN/ITIN validation directive
 
 > Validate SSN format after user entered value (###-##-####).
 
