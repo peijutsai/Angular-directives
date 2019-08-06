@@ -19,7 +19,7 @@
      <input type="text" appNumberOnly [allowDecimal]="true" [allowNegative]="true"/>
   ```
   
-3. Can pass min and max numbers to determin if the number is valid or not
+3. Can pass min and max numbers to determine if the number is valid or not
 
 ```html
      <input type="text" appNumberOnly [max]="4" [min]="1"/>
@@ -107,3 +107,49 @@
      <input type="text" appValidationSsn />
   ```
   
+## Rounded directive
+
+> Currency formatting.
+
+> By default, round fields to three decimal places.
+
+> Determine if show percentage.
+
+
+### Example
+
+
+``` 10000 => $10,000.00```
+
+
+``` 75 => 75.000%```
+
+
+
+### How to use
+
+1. Add the appRounded attribute to an input element.
+
+```html
+     <input type="text" appRounded />
+  ```
+  
+2. Determine if need percentage.
+
+```html
+     <input type="text" appRounded [inPercentage]="true"/>
+  ```
+  
+3. Override the default decimal place.
+
+```html
+     <input type="text" appRounded [decimal]="2"/>
+ ```
+ 
+ ## More info
+ 
+1. Combine `appNumberOnly` and `appRounded`
+
+```html
+     <input type="text" appNumberOnly [allowDecimal]="true" appRounded [inPercentage]="true"/>
+```
