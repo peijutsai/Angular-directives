@@ -146,7 +146,7 @@
      <input type="text" appRounded [decimal]="2"/>
  ```
  
- ## More info
+ ## More options
  
 1. Combine `appNumberOnly` and `appRounded`
 
